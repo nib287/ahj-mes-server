@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever --minUptime 1000 --spinSleepTime 1000  server.js",
+    "watch": "forever  --minUptime 1000 --spinSleepTime 1000 -w server.js"
+  },
+  "dependencies": {
+    "forever": "^3.0.4",
+    "fs": "^0.0.1-security",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.4"
+  },
+  "engines": {
+    "node": "12.18.2"
+  }
+}
